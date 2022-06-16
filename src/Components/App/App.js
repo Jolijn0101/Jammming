@@ -52,9 +52,9 @@ function App() {
 
   return (
     <div>
-      <h1>
+      <h2>
         Ja<span className="highlight">mmm</span>ing
-      </h1>
+      </h2>
       {token && (
         <div id="button-box">
           <button id="logout-btn" onClick={() => setToken('')}>

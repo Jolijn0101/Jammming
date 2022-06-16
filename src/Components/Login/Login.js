@@ -9,7 +9,9 @@ function Login() {
 
   return (
     <div id="login">
-      <h2>Welcome by Jamming</h2>
+      <h1>
+        Welcome by Ja<span className="highlight">mmm</span>ing
+      </h1>
       <p>The web-app that makes the creation of spotify playlists easy!</p>
       <p>Login for making a new playlist.</p>
       <button onClick={toggleLogin}>Login to Spotify</button>
