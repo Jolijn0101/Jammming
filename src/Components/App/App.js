@@ -52,7 +52,7 @@ function App() {
 
   return (
     <div>
-      <h2>
+      <h2 id="title">
         Ja<span className="highlight">mmm</span>ing
       </h2>
       {token && (

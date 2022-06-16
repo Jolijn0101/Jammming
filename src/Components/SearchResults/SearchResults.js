@@ -5,12 +5,8 @@ import TrackList from '../TrackList/TrackList';
 function SearchResults({ searchResults, addTrack, removeTrack }) {
   return (
     <div className="SearchResults">
-      <h2>Results</h2>
-      <TrackList
-        searchResults={searchResults}
-        addTrack={addTrack}
-        removeTrack={removeTrack}
-      />
+      <h2 id="searchresults-title">Results</h2>
+      <TrackList searchResults={searchResults} addTrack={addTrack} removeTrack={removeTrack} />
     </div>
   );
 }

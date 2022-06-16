@@ -4,11 +4,9 @@
   align-items: center;
   overflow-y: scroll;
   width: 37%;
-  max-height: 950px;
+  height: fit-content;
   padding: 10px 20px 20px 20px;
-  /*padding: 2.27rem 1.16rem;*/
   background-color: rgba(1, 12, 63, 0.7);
-  box-shadow: 0 4px 2px 2px #000000;
 }
 
 .Playlist input {
@@ -49,6 +47,13 @@
 @media only screen and (max-width: 1020px) {
   .Playlist {
     width: 90%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .Playlist {
+    width: 80%;
+    margin-bottom: 2rem;
   }
 }
 
