@@ -55,15 +55,19 @@ function App() {
       <h1>
         Ja<span className="highlight">mmm</span>ing
       </h1>
+      {token && (
+        <div id="button-box">
+          <button id="logout-btn" onClick={() => setToken('')}>
+            Logout
+          </button>
+        </div>
+      )}
+
       {token ? (
         <div className="App">
           <SearchBar onSearch={search} />
           <div className="App-playlist">
-            <SearchResults
-              searchResults={searchResults}
-              addTrack={addTrack}
-              removeTrack={removeTrack}
-            />
+            <SearchResults searchResults={searchResults} addTrack={addTrack} removeTrack={removeTrack} />
             <Playlist
               playlistName={playlistName}
               playlistTracks={playlistTracks}
