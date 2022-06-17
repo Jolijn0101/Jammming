@@ -24,3 +24,6 @@ yarn-error.log*
 
 # passwords
 passwordDoc.txt
+
+# large size Movie
+screenshots/Jammming-Movie.mp4
