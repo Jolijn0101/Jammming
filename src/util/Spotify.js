@@ -1,4 +1,4 @@
-const clientId = '997f6474b66d48e899047f09e66a2a88';
+const clientId = 'place your clientId here';
 const redirectUri = 'http://localhost:3000/';
 const authorizeUrl = 'https://accounts.spotify.com/authorize';
 
@@ -61,14 +61,11 @@ const Spotify = {
           .then((response) => response.json())
           .then((jsonResponse) => {
             const playlistId = jsonResponse.id;
-            return fetch(
-              `https://api.spotify.com/v1/users/${userId}/playlists/${playlistId}/tracks`,
-              {
-                headers: headers,
-                method: 'POST',
-                body: JSON.stringify({ uris: trackUris }),
-              }
-            );
+            return fetch(`https://api.spotify.com/v1/users/${userId}/playlists/${playlistId}/tracks`, {
+              headers: headers,
+              method: 'POST',
+              body: JSON.stringify({ uris: trackUris }),
+            });
           });
       });
   },
